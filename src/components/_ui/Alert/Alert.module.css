@@ -1,0 +1,14 @@
+.alert {
+  border-radius: 6px;
+  padding: 1rem;
+  border: 1px solid currentColor;
+  color: hsl(var(--gray-700));
+}
+
+.success {
+  color: hsl(var(--green-500));
+}
+
+.error {
+  color: hsl(var(--red-500));
+}

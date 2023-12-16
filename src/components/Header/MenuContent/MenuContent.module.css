@@ -16,13 +16,16 @@
 
 .navLink {
   display: block;
-  padding: 0.5rem 0;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin-left: -0.75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: hsl(var(--gray-700));
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
+    background-color: hsl(var(--gray-50));
     color: hsl(var(--gray-900));
   }
 }

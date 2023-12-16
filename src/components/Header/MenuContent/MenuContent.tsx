@@ -2,7 +2,7 @@ import { Button } from "../../_ui";
 import { navLinks } from "../MainNav/nav";
 import s from "./MenuContent.module.css";
 
-export default function MenuContent() {
+export default function MenuContent({ handleClose }: { handleClose?(): void }) {
   return (
     <div className={s.menuContent}>
       <ul className={s.navList}>
@@ -14,7 +14,7 @@ export default function MenuContent() {
           </li>
         ))}
       </ul>
-      <Button href="/" className={s.startTrialButton}>
+      <Button onClick={handleClose} className={s.startTrialButton}>
         Start free trial
       </Button>
       <div className={s.existingCustomer}>

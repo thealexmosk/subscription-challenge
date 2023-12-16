@@ -7,6 +7,8 @@ import MenuContent from "../MenuContent";
 export default function Hamburger() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
+  const handleClose = () => setModalIsOpen(false);
+
   return (
     <>
       <button
@@ -17,8 +19,8 @@ export default function Hamburger() {
       >
         <img src={icon} className={s.hamburderIcon} alt="hamburger menu" />
       </button>
-      <Modal handleClose={() => setModalIsOpen(false)} isOpen={modalIsOpen}>
-        <MenuContent />
+      <Modal handleClose={handleClose} isOpen={modalIsOpen}>
+        <MenuContent handleClose={handleClose} />
       </Modal>
     </>
   );
