@@ -1,0 +1,39 @@
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  /* 834px */
+  @media (min-width: 52.125em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hpImageDecoContainer {
+  position: relative;
+}
+
+.hpImageDeco {
+  /* 834px */
+  @media (min-width: 52.125em) {
+    position: absolute;
+    width: 39rem;
+    max-width: none;
+  }
+}
+
+.subscriptionForm {
+  z-index: 10;
+
+  /* 834px */
+  @media (min-width: 52.125em) {
+    grid-row-start: 2;
+    grid-column: span 2;
+    max-width: 31.5rem;
+  }
+
+  /* 834px */
+  @media (min-width: 67.5em) {
+    max-width: 36rem;
+  }
+}

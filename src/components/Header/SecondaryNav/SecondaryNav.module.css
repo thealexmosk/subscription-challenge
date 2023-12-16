@@ -1,0 +1,10 @@
+.secondaryNav {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+
+  /* 834px */
+  @media (min-width: 52.125em) {
+    display: flex;
+  }
+}

@@ -1,0 +1,22 @@
+.subscriptionDescription {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  /* 834px */
+  @media (min-width: 52.125em) {
+    flex-direction: row;
+  }
+}
+
+.input {
+  /* 834px */
+  @media (min-width: 52.125em) {
+    width: 22.5rem;
+  }
+}

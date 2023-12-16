@@ -1,0 +1,14 @@
+.hamburgerButton {
+  height: 2.5rem;
+  background: none;
+
+  /* 834px */
+  @media (min-width: 52.125em) {
+    display: none;
+  }
+}
+
+.hamburderIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
