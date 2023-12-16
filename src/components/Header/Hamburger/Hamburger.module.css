@@ -1,6 +1,22 @@
 .hamburgerButton {
+  display: grid;
+  border-radius: 6px;
   height: 2.5rem;
-  background: none;
+  width: 2.5rem;
+  background-color: hsl(var(--gray-900));
+  transition: background-color 0.3s ease-in-out;
+
+  & > * {
+    place-self: center;
+  }
+
+  &:hover {
+    background-color: hsl(var(--gray-800));
+  }
+
+  &:focus {
+    border-color: hsl(var(--white));
+  }
 
   /* 834px */
   @media (min-width: 52.125em) {

@@ -5,4 +5,15 @@
   font-size: 1rem;
   line-height: 1.5;
   color: hsl(var(--gray-500));
+  border-width: 1px;
+  border-style: solid;
+  outline-width: 1px;
+  outline-style: solid;
+  border-color: transparent;
+  outline-color: transparent;
+
+  &:focus {
+    border-color: hsl(var(--gray-900));
+    outline-color: hsl(var(--indigo-300));
+  }
 }

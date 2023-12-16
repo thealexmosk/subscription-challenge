@@ -2,10 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap");
 
 :root {
+  --indigo-300: 230 94% 82%;
   --indigo-400: 234 89% 74%;
   --indigo-500: 239 84% 67%;
   --indigo-600: 243 75% 59%;
   --white: 0 0% 100%;
+  --gray-100: 220 14% 96%;
   --gray-300: 216 12% 84%;
   --gray-400: 218 11% 65%;
   --gray-500: 220 9% 46%;
@@ -70,7 +72,7 @@ select {
 }
 
 button {
-  border: 0;
+  border-color: transparent;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
